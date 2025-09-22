@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>متجر قطع الإنترنت</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f4f7f9;
+        }
+        .product-card {
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Header -->
+    <header class="bg-white shadow-sm py-4">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <h1 class="text-3xl font-bold text-gray-800">متجر نبع السلام</h1>
+            <nav>
+                <a href="#home" class="text-gray-600 hover:text-[#F2C500] mx-2">الرئيسية</a>
+                <a href="#companies" class="text-gray-600 hover:text-[#F2C500] mx-2">المنتجات</a>
+                <a href="#contact-us" class="text-gray-600 hover:text-[#F2C500] mx-2">اتصل بنا</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-8">
+        <!-- Home Section -->
+        <div id="home" class="bg-white rounded-xl shadow-lg p-8 mb-12 text-center">
+            <h2 class="text-3xl font-bold text-gray-800">
+                <span class="text-[#F2C500]">مرحباً</span> بكم في متجرنا!
+            </h2>
+            <p class="mt-4 text-gray-600 text-lg">
+                نحن نسعى لتلبية جميع طلباتكم من مختلف منتجات الشبكات من كبرى الشركات العالمية.
+                مهمتنا هي توفير أحدث وأفضل المنتجات التي تضمن لكم تجربة اتصال فائقة.
+            </p>
+        </div>
+
+        <h2 id="companies" class="text-4xl font-extrabold text-gray-900 text-center mb-12">
+            الشركات <span class="text-[#F2C500]">المتوفرة</span> لدينا
+        </h2>
+        
+        <!-- Companies Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8">
+            <!-- TP-Link Card -->
+            <div class="product-card bg-white rounded-xl shadow-lg overflow-hidden flex flex-col items-center p-6 text-center">
+                <img src="https://placehold.co/400x300/F2C500/000000?text=TP-Link" alt="TP-Link" class="w-full h-48 object-cover rounded-md mb-4">
+                <h3 class="text-xl font-semibold text-gray-800">TP-Link</h3>
+                <p class="text-gray-600 mt-2">شركة رائدة في منتجات الشبكات المنزلية والتجارية.</p>
+                <div class="flex items-baseline mt-4">
+                    <span class="text-2xl font-bold text-gray-900">منتجات متنوعة</span>
+                </div>
+                <a href="tplink.html" class="mt-4 w-full bg-[#F2C500] text-white py-2 px-4 rounded-lg hover:bg-[#CCAA00] transition-colors inline-block">عرض المنتجات</a>
+            </div>
+
+            <!-- MIKROTIK Card -->
+            <div class="product-card bg-white rounded-xl shadow-lg overflow-hidden flex flex-col items-center p-6 text-center">
+                <img src="https://placehold.co/400x300/F2C500/000000?text=MIKROTIK" alt="MIKROTIK" class="w-full h-48 object-cover rounded-md mb-4">
+                <h3 class="text-xl font-semibold text-gray-800">MIKROTIK</h3>
+                <p class="text-gray-600 mt-2">توفير حلول شبكات متقدمة وموجهات احترافية.</p>
+                <div class="flex items-baseline mt-4">
+                    <span class="text-2xl font-bold text-gray-900">منتجات متنوعة</span>
+                </div>
+                <a href="mikrotik.html" class="mt-4 w-full bg-[#F2C500] text-white py-2 px-4 rounded-lg hover:bg-[#CCAA00] transition-colors inline-block">عرض المنتجات</a>
+            </div>
+
+            <!-- Ubiquiti Card -->
+            <div class="product-card bg-white rounded-xl shadow-lg overflow-hidden flex flex-col items-center p-6 text-center">
+                <img src="https://placehold.co/400x300/F2C500/000000?text=Ubiquiti" alt="Ubiquiti" class="w-full h-48 object-cover rounded-md mb-4">
+                <h3 class="text-xl font-semibold text-gray-800">Ubiquiti</h3>
+                <p class="text-gray-600 mt-2">متخصصة في أنظمة الشبكات اللاسلكية والحلول المؤسسية.</p>
+                <div class="flex items-baseline mt-4">
+                    <span class="text-2xl font-bold text-gray-900">منتجات متنوعة</span>
+                </div>
+                <a href="ubiquiti.html" class="mt-4 w-full bg-[#F2C500] text-white py-2 px-4 rounded-lg hover:bg-[#CCAA00] transition-colors inline-block">عرض المنتجات</a>
+            </div>
+
+            <!-- MIMOSA Card -->
+            <div class="product-card bg-white rounded-xl shadow-lg overflow-hidden flex flex-col items-center p-6 text-center">
+                <img src="https://placehold.co/400x300/F2C500/000000?text=MIMOSA" alt="MIMOSA" class="w-full h-48 object-cover rounded-md mb-4">
+                <h3 class="text-xl font-semibold text-gray-800">MIMOSA</h3>
+                <p class="text-gray-600 mt-2">حلول شبكات لاسلكية سريعة وموثوقة.</p>
+                <div class="flex items-baseline mt-4">
+                    <span class="text-2xl font-bold text-gray-900">منتجات متنوعة</span>
+                </div>
+                <a href="mimosa.html" class="mt-4 w-full bg-[#F2C500] text-white py-2 px-4 rounded-lg hover:bg-[#CCAA00] transition-colors inline-block">عرض المنتجات</a>
+            </div>
+            
+            <!-- NETIS Card -->
+            <div class="product-card bg-white rounded-xl shadow-lg overflow-hidden flex flex-col items-center p-6 text-center">
+                <img src="https://placehold.co/400x300/F2C500/000000?text=NETIS" alt="NETIS" class="w-full h-48 object-cover rounded-md mb-4">
+                <h3 class="text-xl font-semibold text-gray-800">NETIS</h3>
+                <p class="text-gray-600 mt-2">حلول شبكات لاسلكية وسلكية مبتكرة وعالية الأداء.</p>
+                <div class="flex items-baseline mt-4">
+                    <span class="text-2xl font-bold text-gray-900">منتجات متنوعة</span>
+                </div>
+                <a href="netis.html" class="mt-4 w-full bg-[#F2C500] text-white py-2 px-4 rounded-lg hover:bg-[#CCAA00] transition-colors inline-block">عرض المنتجات</a>
+            </div>
+
+            <!-- TENDA Card -->
+            <div class="product-card bg-white rounded-xl shadow-lg overflow-hidden flex flex-col items-center p-6 text-center">
+                <img src="https://placehold.co/400x300/F2C500/000000?text=TENDA" alt="TENDA" class="w-full h-48 object-cover rounded-md mb-4">
+                <h3 class="text-xl font-semibold text-gray-800">TENDA</h3>
+                <p class="text-gray-600 mt-2">منتجات شبكات منزلية سهلة الاستخدام وبأسعار معقولة.</p>
+                <div class="flex items-baseline mt-4">
+                    <span class="text-2xl font-bold text-gray-900">منتجات متنوعة</span>
+                </div>
+                <a href="tenda.html" class="mt-4 w-full bg-[#F2C500] text-white py-2 px-4 rounded-lg hover:bg-[#CCAA00] transition-colors inline-block">عرض المنتجات</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Contact Us Section -->
+    <section id="contact-us" class="container mx-auto px-6 py-8">
+        <div class="bg-white rounded-xl shadow-lg p-8 text-center">
+            <h2 class="text-3xl font-bold text-gray-800">اتصل بنا</h2>
+            <p class="mt-4 text-gray-600 text-lg">
+                يمكنك التواصل معنا عبر الهاتف أو البريد الإلكتروني.
+            </p>
+            <div class="mt-6 space-y-4">
+                <a href="tel:+963999999999" class="block text-gray-700 hover:text-[#F2C500] transition-colors">
+                    <span class="font-semibold">رقم الهاتف:</span> 905550929555 +
+                </a>
+                <a href="mailto:info@yourstore.com" class="block text-gray-700 hover:text-[#F2C500] transition-colors">
+                    <span class="font-semibold">البريد الإلكتروني:</span> info@firatnet.com
+                </a>
+                <a href="https://wa.me/905550929555" class="block w-48 mx-auto bg-green-500 text-white py-3 px-6 rounded-lg hover:bg-green-600 transition-colors">
+                    <span class="font-semibold">تواصل معنا عبر واتساب</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 mt-12">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 متجر الإنترنت. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+</body>
+</html>
